@@ -1,2 +1,8 @@
 #!/bin/bash
-chmod 751 hello
+
+# Get the mode of "olleh" using stat command
+mode=$(stat -c "%a" olleh)
+
+# Set the mode of "hello" to match the mode of "olleh"
+chmod "$mode" hello
+
