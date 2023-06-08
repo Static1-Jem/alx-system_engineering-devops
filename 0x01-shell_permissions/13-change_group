@@ -1,2 +1,2 @@
 #!/bash/bin
-sudo chmod chgrp school hello
+sudo grp school hello
